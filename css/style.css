@@ -1,0 +1,190 @@
+:root {
+  --black: #1f1f1f;
+  --white: #fff;
+  --yellow: #54ebff;
+  --light-yellow: #fff9e9;
+  --deep-yellow: #ffc727;
+  --bg-yellow: #f1feff;
+  --btn-yellow: #fff4d4;
+  --footer-yellow: #fff9e9;
+  --grey: #737373;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s linear;
+  --ambulance: rgb(167, 201, 167);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 100%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.form-box {
+  /* background-color: var(--deep-yellow); */
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px;
+  max-width: 540px;
+  margin: auto;
+ 
+  background-color: rgb(99 102 241);
+  box-shadow: 0px 0px 15px #979797;
+}
+.form-box center {
+  padding: 15px;
+}
+.form-box center h2 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+.container1 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+ 
+   max-width:600px;
+margin:auto;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+outline: none;
+  border-radius: 10px;
+}
+input:focus {
+  outline: 2px solid rgb(214, 214, 214);
+  transition: all .5s ease-in-out;
+}
+input[type=datetime-local] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  
+  border-radius: 10px;
+}
+
+
+input[type=email],textarea, select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  color: #343434 !important;
+  box-shadow: inset 4px 4px 6px #c5c3c3;
+}
+
+input[type=number] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  color: #343434 !important;
+  box-shadow: inset 4px 4px 6px #c5c3c3;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  color: #343434 !important;
+  box-shadow: inset 4px 4px 6px #c5c3c3;
+}
+input[type=time] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  color: #343434 !important;
+  box-shadow: inset 4px 4px 6px #c5c3c3;
+}
+input[type=date] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #707070;
+  box-shadow: inset 4px 4px 6px #c5c3c3;
+}
+
+
+
+.form-btn {
+  background-color: #02033f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Ubuntu';
+ 
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 400px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.about {
+    margin: 5rem 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .content h2 {
+    font-size: 3rem;
+  }  
+}
