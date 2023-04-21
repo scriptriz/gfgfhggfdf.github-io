@@ -3687,7 +3687,8 @@ i.fa.fa-square-plus:hover {
 @media screen and (max-width: 850px) {
   .contact-container .input-box {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100%;  --grey: #737373;
+
   }
 
   .message-icon {
@@ -6161,6 +6162,6 @@ ul.job-box {
 }
 .slick-initialized .slick-slide {
   display: block;
-  filter: brightness(0.5);
+  
 }
 
