@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnFiltered</title>
+
+  <!-- StyleSheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.scss" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Quattrocento+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+</head>
+<style>
+  .preloader {
+    background-color: rgb(190, 204, 192);
+  }
+
+  .rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  }
+
+  .rotate.down {
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  .dropdown-nav {
+    position: absolute;
+    line-height: 40px;
+    top: 32px;
+
+    background: rgb(255, 255, 255);
+    display: none;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  /*
+.dropdown-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+ transform: rotate(90deg);
+  z-index: 1;
+  transition: width 1s;
+}
+.dropdown-nav:hover::before {
+  width: 0%;
+  bottom: 0px;
+}*/
+  .dropdown-nav li {
+    min-width: 111px;
+  }
+
+  .out-nav li:hover>ul {
+    display: block;
+
+  }
+
+  .out-nav .dropdown-nav>li a:hover {
+    text-decoration: none;
+  }
+</style>
+
+<body>
+
+
+  <section id="paddingzero">
+    <div class="mar">
+      <marquee>
+        <span>Patients can get in touch with the physiotherapist on <i class="fa fa-phone"
+            style="font-size: 1.5rem;"></i> +(91)-741-540-5522 or visit the clinic which is functional between 09:00 AM
+          – 08:00 PM from Monday to Saturday at H. No. 483, front of Rajasthan Sweets J.K. Road, Mandakini Kolar, Bhopal
+          Madhya Pradesh, 462042.
+        </span>
+
+      </marquee>
+    </div>
+  </section>
+  <header id="header" class="header">
+    <nav class="navbar" id="cssmenu">
+      <div class="main-logo">
+        <img src="images/Robotic Neuro Rehab.png">
+      </div>
+      <div id="head-mobile"></div>
+      <div class="button">
+        <i class="fa-solid fa-list"></i>
+        <!--- <img src="images/bars.png">-->
+      </div>
+      <ul class="nav-menu align-to-right">
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li>
+        <li><a href="About.html" target="_blank">About Us</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="Services/homevisit.html">Home Visit Services</a>
+            </li>
+            <li>
+              <a href="Services/neckpain.html">Neck & Back Pain</a>
+              <!---<ul class="nav-dropdown">
+                <li>
+                  <a href="#">GW Exploration</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="#" target="_blank">Exploration details/Litholog</a></li>
+                    <li><a href="#" target="_blank">Aquifer-2D (2013)</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" target="_blank">Water level Behaviour</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="#" target="_blank">Ground Water Level</a></li>
+                  </ul>
+                </li>
+           
+                <li><a href="#" target="_blank">Water level Behaviour</a></li>
+                <li><a href="#" target="_blank">Ground Water Resource Estimation</a></li>
+                <li><a href="#" target="_blank">Ground Water Prospects Study (2011)</a></li>
+                <li><a href="#" target="_blank">Artificial Recharge Structure - Viewer</a></li>
+                <li><a href="#" target="_blank">Ground Water Quality</a></li>
+              </ul>-->
+            </li>
+            <li>
+              <a href="Services/sports.html">Sports Injury</a>
+              <!---  <ul class="nav-dropdown">
+                <li><a href="#" target="_blank">Land Use – Land Cover</a></li>
+                <li><a href="#" target="_blank">Soil Type</a></li>
+                <li><a href="#" target="_blank">Land Degradation (2005-06)</a></li>
+                <li><a href="#" target="_blank">Water Logging/Soil Salinity (2003-05)</a></li>
+                <li><a href="#" target="_blank">Wasteland Study (1986-2006)</a></li>
+              </ul>-->
+            </li>
+            <li>
+              <a href="Services/dryneedling.html">Dry Needling Acupuncture</a>
+              <!--- <ul class="nav-dropdown">
+                <li><a href="#" target="_blank">Rainfall</a></li>
+                <li><a href="#" target="_blank">Evapo-transpiration</a></li>
+                <li><a href="#" target="_blank">Soil Moisture</a></li>
+                <li><a href="#" target="_blank">Agro-Climatic/Ecological Region</a></li>
+              </ul>-->
+            </li>
+            <li>
+              <a href="Services/neurology.html">Neurological & Paralysis</a>
+              <!-- <ul class="nav-dropdown">
+                <li><a href="#" target="_blank">Inland Navigation Waterways</a></li>
+                <li><a href="#" target="_blank">Storm Surge Study (2011)</a></li>
+                <li><a href="#" target="_blank">Socio-Economic Census (2011)</a></li>
+                <li><a href="#" target="_blank">Flood Inundation (2008-2010)</a></li>
+                <li><a href="#" target="_blank">Drought Affected Areas (2002)</a></li>
+                <li><a href="#" target="_blank">Reported Extreme Temperature, Rainfall & Earthquake Events</a></li>
+              </ul>-->
+            </li>
+            <li>
+              <a href="#">Chiropractice</a>
+              <!--  <ul class="nav-dropdown">
+                <li><a href="#" target="_blank">Water Resources Projects</a></li>
+                <li><a href="#" target="_blank">Inter-Basin Transfer Links</a></li>
+                <li><a href="#" target="_blank">Minor Irrigation Census</a></li>
+              </ul>-->
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="appointment.html">Appointment</a>
+          <!-- <ul class="nav-dropdown">
+            <li><a href="#" target="_blank">Surface Water Audit</a></li>
+            <li><a href="#" target="_blank">PMP Atlas</a></li>
+            <li><a href="#" target="_blank">Online Web Editor</a></li>
+            <li><a href="#" target="_blank">Artificial Recharge Structure Data Entry</a></li>
+            <li><a href="#" target="_blank">Geo Viewer</a></li>
+            <li><a href="#" target="_blank">District At A Glance</a></li>
+          </ul>-->
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="career.html">Career</a>
+          <!--<ul class="nav-dropdown">
+            <li><a href="#" target="_blank">WRIS Wiki</a></li>
+            <li><a href="#" target="_blank">Meta Data</a></li>
+            <li><a href="#" target="_blank">Data Availability</a></li>
+            <li><a href="#" target="_blank">Data/Report Download</a></li>
+          </ul>-->
+        </li>
+
+        <li>
+          <a href="contact.html">Contact Us</a>
+          <!--<ul class="nav-dropdown">
+            <li><a href="#" target="_blank">Contact Details</a></li>
+            <li><a href="#" target="_blank">External Links</a></li>
+          </ul>-->
+        </li>
+      </ul>
+    </nav>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/nav.js"></script>
+
+  </header>
+  <!-- partial -->
+
+
+  <section id="paddingzero">
+    <div class="container-slider">
+      <div class="slider">
+        <!-- fade css -->
+        <div class="myslide fade">
+
+          <div class="txt">
+            <!---<h2>Welcome To<br> Robotic Neuro Rehab</h2>
+            <a href="#">Appointment</a>
+           -->
+            <div id="textchange">
+              Welcome To
+              <div id=flip>
+                <div>
+                  <div>Robotic</div>
+                </div>
+                <div>
+                  <div>Neuro</div>
+                </div>
+                <div>
+                  <div>Rehab</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/Banner 1.png">
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h2>A WAY TO HEALTHY LIFE</h2>
+
+          </div>
+          <img src="images/Banner-2.png">
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h2>Back To Life Again</h2>
+
+          </div>
+          <img src="images/Banner-3.png">
+        </div>
+        <!-- /fade css -->
+
+        <!-- onclick js -->
+        <a class="prev" onclick="plusSlides(-1)"><!--&#10094;--><i class="fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><!--&#10095;--><i class="fa-solid fa-chevron-right"></i></a>
+
+      </div>
+
+      <script src="js/slide.js"></script>
+      <script src="js/textslidde.js"></script>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section>
+
+    <div class="container-services">
+      <div class="services" id="services">
+        <div class="top">
+          <h5 class="content-title" style=" font-weight: 700;"><i
+              class="fa-sharp fa-solid fa-wheelchair-move"></i><!--Welcom TO Physiotherapy & Robotics Neuro Rehabilitation clinic-->
+            Back to Life Again <i class="fa-sharp fa-solid fa-wheelchair-move"></i></h5>
+          <h2><span class="yellow">What
+            </span> Can We Do For You ?</h2>
+          <p>
+            WHAT CAN WE DO FOR YOU? Patients can get in touch with the physiotherapist on +(91)-741-540-5522 or visit
+            the
+            clinic which is functional between 09:00 AM – 08:00 PM from Monday to Saturday at H. No. 483, front of
+            Rajasthan
+            Sweets J.K. Road, Mandakini Kolar, Bhopal Madhya Pradesh, 462042 Our clinic provides comprehensive
+            Services
+            and treatment for:High In Protein
+
+          </p>
+        </div>
+
+        <div class="bottom">
+
+          <div class="box box-1 line-gap">
+            <!---    <img src="./images/delivery-man.svg" alt="" />-->
+            <i class="fa fa-hospital"></i>
+            <h4>Opening Hours</h4>
+            <div class="time-box">
+              <div class="flex-box">
+                <p>Mon-Fri</p>
+                <p>8:00am - 9:00pm</p>
+              </div>
+              <div class="flex-box">
+                <p>Saturday</p>
+                <p>8:00am - 9:00pm</p>
+              </div>
+              <div class="flex-box">
+                <p>Sunday</p>
+                <p>8:00am - 9:00pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-2 line-gap">
+            <!---   <img src="./images/fast-food.svg" alt="" /> -->
+            <i class="fa fa-hospital"></i>
+            <h4>Location</h4>
+            <p>
+              H. No. 483, front of Rajasthan Sweets J.K. Road, Mandakini Kolar, Bhopal Madhya Pradesh, 462042
+            </p>
+          </div>
+          <div class="box box-3 line-gap">
+            <!---  <img src="./images/order-food.svg" alt="" /> -->
+            <i class="fa fa-hospital"></i>
+            <h4>Make Appointment</h4>
+            <p>
+              Patients can get in touch with the physiotherapist on +(91)-741-540-5522 or visit the clinic.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-treatment-list">
+      <div class="content-area">
+        <h2 class="content-title-1">Robotic Neuro Rehab Is Unique</h2>
+        <p class="content-des">Everyone needs hope. Without hope, you cannot recover. You will find throughout our
+          programs that hope is not discouraged but found within our staff and most importantly our clients.</p>
+        <div class="content-head" style="justify-content: center;">
+
+          <img src="images/Pain images.png">
+
+          <div class="container-1">
+            <h2 class="container-1-heading">Our clinic provides comprehensive <span>Services</span> and treatment for
+            </h2>
+            <div class="pop-btn">
+              <p data-target="#modal10"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Neurological
+                  Rehab
+                  and Paralysis</a></p>
+              <p data-target="#modal9"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Dry Needling
+                  Acupuncture</a></p>
+              <p data-target="#modal6"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Ligament Injury
+                  Rehab</a></p>
+              <p data-target="#modal1"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Neck/Back
+                  Pain</a></p>
+              <p data-target="#modal2"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Shoulder
+                  Pain</a></p>
+              <p data-target="#modal3"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Sciatica</a>
+              </p>
+              <p data-target="#modal4"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Slipped
+                  Disc</a></p>
+              <p data-target="#modal5"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Sport Injury
+                  Rehab</a></p>
+              <p data-target="#modal7"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Cerebral
+                  Palsy</a></p>
+              <p data-target="#modal8"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Ortho/Neuro
+                  Pain</a></p>
+              <p data-target="#modal11"><a><i class="fa fa-square-plus" style="margin-right: 5px;"></i>Physical
+                  Therapy </a></p>
+            </div>
+            <div class="modal-1" id="modal1">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Neck Pain</h2>
+                <p>Neck pain can come from a number of disorders and diseases and can involve any of the tissues in the
+                  neck.
+                  Examples of common conditions causing neck pain are degenerative disc disease, neck strain, neck
+                  injury
+                  such as in whiplash, a herniated disc, or a pinched nerve. … Neck pain is also referred to as cervical
+                  pain.
+                </p>
+                <h2>Back Pain</h2>
+                <p>Back pain is pain felt in the back of the body.
+                  It is divided into neck pain (cervical), middle back pain (thoracic), lower back pain (lumbar) or
+                  coccydynia
+                  (tailbone or sacral pain)
+                  based on the segment affected. …
+                  It is the most common cause of chronic pain, and is a major contributor of missed work and disability.
+                </p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal2">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Shoulder Pain</h2>
+                <p>The shoulder is a ball and socket joint with a large range of movement.
+                  Such a mobile joint tends to be more susceptible to injury.
+                  Shoulder pain can stem from one or more of the following causes:
+
+                  <li> Strains from overexertion</li>
+                  <li>Tendonitis from overuse</li>
+                  <li>Shoulder joint instability</li>
+                  <li>Dislocation</li>
+                  <li>Collar or upper arm bone fractures</li>
+                  <li>Frozen shoulder</li>
+                  <li>Pinched nerves (also called radiculopathy)</li>
+                </p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal3">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Sciatica :</h2>
+                <p>Pain radiating along the sciatic nerve, which runs down one or both legs from the lower back.
+                  It’s usually caused when a herniated disc or bone spur in the spine presses on the nerve.
+                  Pain originates in the spine and radiates down the back of the leg. Sciatica typically affects only
+                  one
+                  side
+                  of the body.
+
+                </p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal4">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Slipped Disc :
+
+
+                </h2>
+                <p>Physiotherapy treatment for disc prolapses is very effective and aims to reduce pain, stiffness and
+                  muscle
+                  spasm, as well as sciatic leg pain. Once your disc prolapsed symptoms ahave been reduced your
+                  physiotherapist
+                  will help to improve your muscle strength and flexibility.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal5">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Sport Injury Rehab :</h2>
+                <p>Sports rehabilitation is a type of physical therapy that treats people of all ages who have
+                  musculoskeletal
+                  system pain, injury, or illness. With the use of exercise, movement, and therapeutic interventions,
+                  sports
+                  rehabilitation helps maintain health and fitness and helps you recover from injury and reduce pain.
+                </p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal6">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Ligament Injury Rehab :</h2>
+                <p>Physiotherapy is an effective treatment for ligament injuries. Ligaments are tough bands of tissues
+                  that
+                  connect to your body. They act as pullies between your bones as your body actively moves around.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal7">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Cerebral Palsy :</h2>
+                <p>Manual stretching may increase range of movements, reduce spasticity, or improve walking efficiency
+                  in
+                  children with spasticity. Stretch may be applied in a number of ways during neurological
+                  rehabilitation
+                  to
+                  achieve different effects. The types of stretching used include; Fast / Quick.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal8">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Neuro Pain :</h2>
+                <p>Neuropathic pain can happen if your nervous system is damaged or not working correctly. You can feel
+                  pain
+                  from any of the various levels of the nervous system—the peripheral nerves, the spinal cord and the
+                  brain.
+                  Together, the spinal cord and the brain are known as the central nervous system..</p>
+                <h2>Ortho Pain :</h2>
+                <p>Ortho Pain Relief Oil is an ayurvedic medicine that is used for all kinds of pains. The active
+                  ingredients
+                  of
+                  Dr. Ortho Pain Relief Oil help in the stimulation of blood circulation, stiff muscles and limbs, body
+                  aches,
+                  muscular pains, severe joint pain or swelling, joint aches and pain.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal9">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Dry Needling Acupuncture :</h2>
+                <p>
+                  Dry needling is also known as the trigger point dry needling used for Low back pain/tension. Relieve
+                  Pain
+                  and
+                  Muscle Tightness. It’s good for reducing pain in different parts of the body, and great for improving
+                  the
+                  Range of Motion, and can Speed Up Recovery. We are one of the <span class="highlight-line">BEST Dry
+                    Needling Therapy Clinic in
+                    Bhopa/Madhya
+                    Pradesh.</span> Dry Needling Therapy is very popular to ease muscular pain, improve tissue healing
+                  and
+                  restore muscle function.
+                  Dry needling is performed by our expert physiotherapy specialists by the insertion of the needle into
+                  the
+                  soft
+                  tissue. This will help to decrease myofascial tension and improve musculoskeletal function. Our physio
+                  are
+                  recognized as the <span>best dry needling
+                    doctor
+                    in
+                    Bhopal</span>
+                  due to their Expertise & Treatment Care.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal10">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Neurological Rehab and Paralysis :</h2>
+                <p>Neurological physiotherapy involves the treatment of people with movement and function disorders that
+                  have
+                  originated from problems within the body's nervous and neuromuscular system.</p>
+              </div>
+            </div>
+            <div class="modal-1" id="modal11">
+              <div class="header">
+                <div class="title">Description</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <h2>Physical Therapy :</h2>
+                <p>As a part of physiotherapy, our experienced experts study the body condition of the patients that
+                  include
+                  posture, body balance and normal movement. Knowledge about the disease, injuries and required
+                  treatment
+                  are
+                  thoroughly discussed.
+                  Physiotherapists help the patient to recover and regain the normal conditions. Our experts have deep
+                  understanding of the muscles, bones and nerves. Evaluation, diagnose and treatment of the patient’s
+                  illness,
+                  injury and complications are their prime duties. Proper care is taken in adopting the measures and
+                  techniques
+                  for correcting the complications.</p>
+              </div>
+            </div>
+
+
+            <div id="overlay"></div>
+          </div>
+
+        </div>
+        <p class="para-1">A HEALTHY
+          LIFE IS ALWAYS
+          CONSIDERED
+          MORE IMPORTANT THAN A RICH LIFE.</p>
+
+      </div>
+    </div>
+  </section>
+  <script>
+    const btns = document.querySelectorAll("[data-target]");
+    const close_modals = document.querySelectorAll(".close-modal");
+    const overlay = document.getElementById("overlay");
+
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelector(btn.dataset.target).classList.add("active");
+        overlay.classList.add("active");
+      });
+    });
+
+    close_modals.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const modal = btn.closest(".modal-1");
+        modal.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    });
+
+    window.onclick = (event) => {
+      if (event.target == overlay) {
+        const modals = document.querySelectorAll(".modal-1");
+        modals.forEach((modal) => modal.classList.remove("active"));
+        overlay.classList.remove("active");
+      }
+    };
+  </script>
+
+
+
+
+
+  <!-- About #2 -->
+  <section>
+    <div class="container-about">
+      <div class="about about-2">
+        <div class="content">
+          <h2>
+            <span class="yellow">We Would Be<br></span>Happy To Meet You
+          </h2>
+          <p>
+            As you may have already understand, a physiotherapist can get you on track to
+            have pain-free movement, which is essential to be able to do your favourites physical activities, so
+            preventing a lot of chronic diseases, and have a good time too. You can recover well from a large
+            variety of conditions with physiotherpists' help.
+          </p>
+          <a href="#" class="btn">Book Now <i class="fa fa-arrow-right"></i></a>
+        </div>
+        <!---
+    <div class="image">
+      <img src="./images/illus deliver.svg" alt="" />
+    </div>-->
+        <div class="form-section">
+
+
+          <div>
+            <div>
+              <div class="form-box">
+                <center>
+                  <h2>Book An Appointment</h2>
+                </center>
+                <form action="submit_phpcrm_form.php" method="post">
+
+
+
+                  <div>
+                    <div><br>
+                      <label for="name"></label>
+                      <input type="text" id="fname" name="name" placeholder="Name" required>
+
+
+                      <label for="email"></label>
+                      <input type="text" id="email" name="email" placeholder="Email" required>
+
+
+                      <label for="phone"></label>
+                      <input type="number" id="phone" name="phone" placeholder="Phone" required>
+                      <label for="date"></label>
+                      <input type="date" id="date" name="date" placeholder="" required>
+
+
+
+                      <textarea id="Message" name="Message" placeholder="Special notes,Concerns,or requirements.."
+                        style="height:150px" required></textarea>
+
+                    </div>
+                    <div>
+
+
+                      <input type="submit" value="Submit" class="form-btn">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="gallery-container">
+
+      <div class="gallery-heading">
+        <h2><span class="yellow">Our</span> Gallery</h2>
+      </div>
+      <div class="image-gallery-2">
+
+        <div class="gallery-flex-box">
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-3.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Rest is not the answer
+                Activity and therapy help healing most”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-4.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Each body is different
+                Therefore each rehabilitation must be different”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-flex-box">
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-5.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Being physically healthy is not expensive!
+                Being injured is..
+                So prevent injuries!”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-6.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Don't feel sad or get upset about your injury situation.
+                You can't change what has happened.
+                But you can change your future by being able to prevent your injuries.”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-gallery-2">
+        <div class="gallery-flex-box">
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-7.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Accept your injury.
+                There are thousands of people who are dealing with the same injury.
+                You are not the only one.”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-8.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Recovery is indeed a manifestation of the law of nature, efforts of patient and guidance from physical
+                therapist or rehabilitation specialist.”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-flex-box">
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-9.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Let's not wait for perfect conditions to begin. Let's begin to make perfection conditions for a
+                healthy physical condition.”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="imgcard">
+            <div class="img-box">
+              <img src="images/g-10.png">
+            </div>
+            <div class="imgcontent">
+              <img src="images/main-logo.png">
+              <h2>Robotic Neuro Rehab</h2>
+              <p>“Let's not wait for perfect conditions to begin. Let's begin to make perfect conditions for a healthy
+                physical condition.”</p>
+              <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- /////////////// Video Section ///////////////////////////-->
+
+  <section>
+    <div class="video-with-text-section">
+      <div class="video-with-text">
+        <div class="video-box">
+
+
+          <iframe src="https://www.youtube.com/embed/9rltDtDTRIs" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-box-heading">
+          <p class="video-first">Back To Life Again</p>
+          <h2>Syrebo™ Soft hand rehabilitation robotic gloves for stroke patients</h2>
+          <p class="video-second">It is estimated that 25-35 people have Bell's Palsy for every 1, 00,000. In India,
+            about
+            10% of those diagnosed with Bell's Palsy die due to complications of the condition.
+            <br><span>Facial Stimulation</span>
+            <br>
+
+            <li>Step 1: Begin by trying to move every part of your face slowly and gently.</li>
+            <li>Step 2: Use your fingers to gently lift your eyebrows. One side will lift higher than the other, but
+              don’t
+              apply too much force to the side that is drooping.</li>
+            <li>Step 3: Using your fingers, gently massage the different parts of your face, including your forehead,
+              nose, cheeks, and mouth.</li>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About #3 -->
+  <section id="services-aria">
+    <div class="container-6">
+      <div class="about about-3" style="gap: 3rem 13rem">
+        <div class="image">
+          <img src="images/Group 1 (1).png" alt="" />
+        </div>
+
+        <div class="content">
+          <h2><span class="yellow">Our</span> Experience</h2>
+          <p>
+            <span>Robotic Neuro Rehab</span> has extensive experience in handling neurological rehabilitation. We have
+            treated nearly 100+ spinal cord injury and ]'' than 500+ neuro patients including stroke/paralysis, cerebral
+            palsy, muscular dystrophy, transverse myelitis and other conditions that require long term rehabilitation.
+            Robotic Neuro Rehab provides confidence in their patients while bringing the fighting spirit without ever
+            thinking of giving up.
+          </p>
+          <a href="#" class="btn">READ MORE <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="testimonial py-25">
+
+      <div class="container-google-slider">
+        <div class="google-slider-heading">
+          <h2>What Our Customer Says</h2>
+        </div>
+        <div class="panel panel-3">
+          <div class="heading heading-2 text-center">
+            <div class="review-heading-1">
+              <div class="review-heading-1-a">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png">
+                <p>Rating</p>
+              </div>
+              <div class="review-heading-1-b">
+                <div class="review-heading-1-a-1">
+                  <p>5.0</p>
+                </div>
+                <div class="review-heading-1-a-2">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="review-heading-1-a-3">
+                  <p>131 reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-heading-2">
+              <p>Write a review</p>
+            </div>
+          </div>
+          <div class="review-slider">
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5TP9hqU5bzMGlFx8bgFGbaci-rPYRJAOXPUxVXTOg=w60-h60-p-rp-mo-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Manohar Singh</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>2 months ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  Best Physiotherapist, I'm suffered from frozen shoulder in my both hand from last six month's, I have
+                  start treatment in physiotherapy and only 3 sitting get mor flexible my shoulder I'm very happy thanks
+                  Dr SK Kushwaha.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5Q0EzZDWw-ZhVfkCOD_7rnPb0HQ4MnjZWRZj4DRRx4=w60-h60-p-rp-mo-ba2-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Anirudh Pandey</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>10 months ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  I would recommend you to visit for the physiotherapy services. They are supportive, experienced,
+                  knowledgeable and down to earth. They don't print money but genuinely help the patients.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5Tv_CqBD8rbqgr9hnu4ZS99_IMfYrR9LtA3o-t0IA=w60-h60-p-rp-mo-ba2-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Jeetendra Mishra</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>a year ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  Suddenly I got the back pain and was not able to move at all but after taking 1st session only
+                  relaxed.
+                  Very nice service and knowladge on to catch main pain point.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5Sh31Oi23mcfW4SlVfRwCg7Imf348MPP1o_Vwpcjg=w60-h60-p-rp-mo-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Dinesh Sharma</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>a year ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  We gone with a pain but after treatment we returned with a smile on our face.Therapy done by Dr. Sunil
+                  Kushwaha is excellent.
+                  Thanks
+                  May God Bless you 🙏
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5QRfWMWTYvTsa_LDLaTvOz5FgoJ5zDd2PTwEwASKfQ=w60-h60-p-rp-mo-ba4-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Krishna Kushwaha</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>a year ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  I have taken treatment for my neck pain and shouder pain (Treatment Dry needling and MFR). Got 90%
+                  relief in 1 sitting will continue further treatment.
+                  Thanks Dr Sunil Kushwaha.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACB-R5TWSY-MDQCY7iW4XQiL4LshLYbwW4iKqWreZ-AX=w60-h60-p-rp-mo-br100"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Rajesh Srivastava</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>3 years ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  Good experience taking treatment for neck and shoulder pain started feeling better in just 3 sessions
+                  good advice and care taken by Dr S.K Kushwaha.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="user">
+                <div class="part-img">
+                  <div class="avatar">
+                    <img
+                      src="https://images.pexels.com/photos/1466844/pexels-photo-1466844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt="Avatar" />
+                  </div>
+                </div>
+                <div class="txt-google">
+                  <div class="txt-1">
+                    <h4>Pooja Sachdeva</h4>
+                  </div>
+                  <div class="txt-2">
+                    <div class="txt-2-a">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="txt-2-b">
+                      <p>5 days ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-txt">
+                <p>
+                  I'm suffering from (MS) Multiple sclerosis before 17 years, I start treatment in Robotic neuro rehab
+                  under supervision dr sk kushwaha sir and I'm very happy to my condition is improved, thank you🙏 sir.
+                </p>
+              </div>
+              <div class="star-wrap">
+                <div class="google-img">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg">
+                </div>
+                <div class="post-g">
+                  <p>Posted on</p>
+                  <a href="">Google</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="slide-button">
+          <span class="priv-arrow"><i class="fa fa-chevron-left"></i></span>
+
+          <span class="next-arrow"><i class="fa fa-chevron-right"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js'></script>
+    <script src="js/script.js"></script>
+  </section>
+
+  <!-- /////////////// Video Section ///////////////////////////-->
+
+  <section>
+    <div class="video-with-text-section-bottom">
+      <div class="video-with-text">
+        <div class="video-box">
+
+          <iframe src="https://www.youtube.com/embed/lotpZXxxetc" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-box-heading">
+          <p class="video-first">Back To Life Again</p>
+          <h2>Best Exercises for Bell’s Palsy</h2>
+          <p class="video-second">It is estimated that 25-35 people have Bell's Palsy for every 1, 00,000. In India,
+            about
+            10% of those diagnosed with Bell's Palsy die due to complications of the condition.
+            <br><span>Facial Stimulation</span>
+            <br>
+
+            <li>Step 1: Begin by trying to move every part of your face slowly and gently.</li>
+            <li>Step 2: Use your fingers to gently lift your eyebrows. One side will lift higher than the other, but
+              don’t
+              apply too much force to the side that is drooping.</li>
+            <li>Step 3: Using your fingers, gently massage the different parts of your face, including your forehead,
+              nose, cheeks, and mouth.</li>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="content">
+
+      <script src="js/parrti.js"></script>
+      <div class="footer-top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">Robotic Neuro Rehab</span>
+
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">Home Visit Services</a></li>
+          <li><a href="#">Neck & Back Pain
+            </a></li>
+          <li><a href="#">Sports Injury</a></li>
+          <li><a href="#">Dry Needling Acupuncture</a></li>
+          <li><a href="#">Neurological Rehab & Paralysis</a></li>
+          <li><a href="#">Chiropractice</a></li>
+        </ul>
+
+
+        <ul class="box">
+          <li class="link_name">Get In Touch</li>
+          <li><a href="#"><i class="fa fa-phone fa-shake"></i>+919174406496</a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i>physio.rehab@gmail.com</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot fa-shake"></i>H. No. 483, front of Rajasathan Sweets
+              J.K. Road, Mandakini Kolar, Bhopal
+              Madhya Pradesh, 462042</a></li>
+
+        </ul>
+        <ul class="box footer-box-3">
+          <li class="link_name">Company</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+        <!--   <ul class="box">
+          <li class="link_name">Courses</li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Photoshop</a></li>
+        </ul>-->
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="#">Logo.</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="scroll-top">
+    <img src="./images/arrow-up-outline.svg" alt="" />
+    <script src="js/main.js"></script>
+  </div>
+  <!--<a href="#" class="scroll-top">Back to Top</a>-->
+  <div class="click-call">
+    <a href="tel:6266275355">Click to call</a>
+  </div>
+
+  <section id="#socialhandle">
+    <div class="social-media-icon">
+      <ul id="menu">
+        <li class="one"><a class="" href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li class="two">
+          <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li class="three">
+          <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li class="four">
+          <a href="#" class=""><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li class="five">
+          <a href="#" class=""><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- //////////////// CALL NOW Button //////////////-->
+
+  <div class="call-home-btn">
+    <button id="make_call"> <a href="tel:9174406496"><i class="fa-solid fa-phone fa-shake"></a></i></button>
+  </div>
+  <!-- partial -->
+  <a href="https://wa.me/6266275355" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+
+
+</body>
+
+</html>
